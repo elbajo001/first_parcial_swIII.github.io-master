@@ -9,34 +9,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <style>
-      ::placeholder {
-        color: red;
-      }
-    </style>
+    <link type="text/css" rel="stylesheet" href="css/estilos.css"/>
 </head>
-<body style="background-color: hsl(131, 40%, 75%);">
-  <div class="container">
+<body>
+  <div id="redondeado" class="container">
     <div class="section" style="margin: 150px;">
       <label style="font-size: 18px;color: black;" for="InputCedula"><strong>Cédula</strong></label>
       <input style="text-align: center;" type="text" id="InputCedula" placeholder="Ingrese la cédula">
       <button style="margin: 0px 45%;" class="btn" id="btn_enviar" onclick = "location='index.php'">
         Enviar
       </button>
-      <table>
-        <thead>
-          <tr>
-            <th>Tarea</th>
-            <th>Fecha de creación</th>
-          </tr>
-        </thead>
-        <tbody id="tbody_rta">
-
-        </tbody>
-      </table>
-
-      <div class="section" id="div_rta">
-      </div>
     </div>
   </div>
 

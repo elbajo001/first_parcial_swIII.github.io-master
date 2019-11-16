@@ -1,14 +1,14 @@
 [
     {
         "tarea": "bailar",
-        "cedula": "001"
+        "fecha_creación": "16/11/19"
     },
     {
         "tarea": "cantar",
-        "cedula": "001"
+        "fecha_creación": "16/11/19"
     },
     {
         "tarea": "soplar",
-        "cedula": "001"
+        "fecha_creación": "16/11/19"
     }
 ]

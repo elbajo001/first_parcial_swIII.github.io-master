@@ -1,6 +1,6 @@
 console.log('activo');
 
-document.querySelector('#btn_enviar').addEventListener('click', traerDatos);
+document.querySelector('#btn_enviar_php').addEventListener('click', traerDatos);
 
 function  traerDatos(){
 
@@ -16,14 +16,22 @@ function  traerDatos(){
         rta.innerHTML+=`
           <tr>
             <td>${item.tarea}</td>
-            <td>${item.cedula}</td>
+            <td>${item.fecha_creación}</td>
+            <td>
+              <form action="#">
+                <label>
+                  <input id="indeterminate-checkbox" type="checkbox" />
+                  <span></span>
+                </label>
+              </form>
+            </td>
           </tr>
         `
       }
     }
   };
 
-  xhttp.open("GET", "tareas.json", true);
+  xhttp.open("GET", "100.json", true);
   xhttp.send();
 
 }

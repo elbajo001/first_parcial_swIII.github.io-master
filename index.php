@@ -88,13 +88,10 @@
         }
 
     }
-
-    $p = new Persona("Juan", 001);
-    echo $p->nombre;
     /*
     $jsonencoded = json_encode($json,JSON_UNESCAPED_UNICODE);
 
-    $fh = fopen($p->getNombre(),".json", 'w');
+    $fh = fopen(""$p->getNombre()"",".json", 'w');
     fwrite($fh, $jsonencoded);
     fclose($fh);
     */
@@ -106,7 +103,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>doc php</title>
+    <title>docphp</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -115,19 +112,31 @@
     </style>
 </head>
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th>Tarea</th>
-        <th>Fecha de creación</th>
-      </tr>
-    </thead>
-    <tbody id="tbody_rta">
-
-    </tbody>
-  </table>
-
-  <div class="section" id="div_rta">
+  <div id="redondeado" class="container">
+    <div class="section" style="margin: 150px;">
+      <?php
+        $p = new Persona("Juan", 001);
+        echo $p->nombre;
+      ?>
+      <button style="margin: 0px 45%;" class="btn" id="btn_enviar_php">
+        Enviar
+      </button>
+      <table>
+      <thead>
+        <tr>
+          <th>Tarea</th>
+          <th>Fecha de creación</th>
+          <th>Hecha</th>
+        </tr>
+      </thead>
+      <tbody id="tbody_rta"></tbody>
+      </table>
+      <button style="margin: 5% 45%;" class="btn" id="btn_home" onclick = "location='index.html'">
+        Inicio
+      </button>
+    </div>
   </div>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/ajax1.js"></script>
 </body>
 </html>

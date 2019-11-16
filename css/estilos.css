@@ -2,6 +2,12 @@
     color: rgb(93, 87, 87);
 }
 
+#redondeado {
+    -moz-border-radius: 9px;
+    -webkit-border-radius:9px;
+    background-color: hsl(140, 37%, 71%);
+}
+
 body{
-    background-color: hsl(131, 40%, 75%);
+    background-color: #24A49C;
 }
